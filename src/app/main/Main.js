@@ -3,6 +3,7 @@ import straipsniai from "../duomenys/straipsniai";
 import Article from "../article/Article";
 import Contacts from "../kontaktai/Contacts";
 import BookList from "../bookList/BookList";
+import VideoState from "../videostate/VideoState";
 
 
 class Main extends React.Component{
@@ -19,6 +20,7 @@ render(){
 
     return(
         <main>
+            <VideoState/>
             <BookList/>
             <div>{duomenysStraipsniai}</div>
             <Contacts vardas= 'Laura' email = 'gsm@gmail.com' intialAge={17}/>
